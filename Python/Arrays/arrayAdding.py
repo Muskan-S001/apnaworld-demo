@@ -1,7 +1,7 @@
 def adding(arr1, arr2):
     i = len(arr1)-1
     j = len(arr2)-1
-    n3 = max(len(arr1),len(arr2))+1
+    n3 = max(len(arr1),len(arr2))
     ans = [0]*n3
     print(ans)
     k = len(ans)-1
@@ -20,9 +20,8 @@ def adding(arr1, arr2):
         j -= 1
         k -= 1
     if carry ==1:
-        print(carry, end="")
-    for k in range(0,n3):
-        print(ans[k])
+        ans[0]=1
+    print(ans)    
 
 if __name__ == '__main__':
     n1 = int(input())
